@@ -1,0 +1,282 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@arrow-right-name: arrow-right;
+@arrow-right-x: 278px;
+@arrow-right-y: 271px;
+@arrow-right-offset-x: -278px;
+@arrow-right-offset-y: -271px;
+@arrow-right-width: 23px;
+@arrow-right-height: 16px;
+@arrow-right-total-width: 330px;
+@arrow-right-total-height: 321px;
+@arrow-right-image: '/images/sprite.png';
+@arrow-right: 278px 271px -278px -271px 23px 16px 330px 321px '/images/sprite.png' arrow-right;
+@call-phone-name: call-phone;
+@call-phone-x: 220px;
+@call-phone-y: 110px;
+@call-phone-offset-x: -220px;
+@call-phone-offset-y: -110px;
+@call-phone-width: 110px;
+@call-phone-height: 110px;
+@call-phone-total-width: 330px;
+@call-phone-total-height: 321px;
+@call-phone-image: '/images/sprite.png';
+@call-phone: 220px 110px -220px -110px 110px 110px 330px 321px '/images/sprite.png' call-phone;
+@check-name: check;
+@check-x: 250px;
+@check-y: 271px;
+@check-offset-x: -250px;
+@check-offset-y: -271px;
+@check-width: 28px;
+@check-height: 29px;
+@check-total-width: 330px;
+@check-total-height: 321px;
+@check-image: '/images/sprite.png';
+@check: 250px 271px -250px -271px 28px 29px 330px 321px '/images/sprite.png' check;
+@facebook-hover-name: facebook-hover;
+@facebook-hover-x: 259px;
+@facebook-hover-y: 220px;
+@facebook-hover-offset-x: -259px;
+@facebook-hover-offset-y: -220px;
+@facebook-hover-width: 51px;
+@facebook-hover-height: 51px;
+@facebook-hover-total-width: 330px;
+@facebook-hover-total-height: 321px;
+@facebook-hover-image: '/images/sprite.png';
+@facebook-hover: 259px 220px -259px -220px 51px 51px 330px 321px '/images/sprite.png' facebook-hover;
+@facebook-name: facebook;
+@facebook-x: 208px;
+@facebook-y: 220px;
+@facebook-offset-x: -208px;
+@facebook-offset-y: -220px;
+@facebook-width: 51px;
+@facebook-height: 51px;
+@facebook-total-width: 330px;
+@facebook-total-height: 321px;
+@facebook-image: '/images/sprite.png';
+@facebook: 208px 220px -208px -220px 51px 51px 330px 321px '/images/sprite.png' facebook;
+@home-tools-name: home-tools;
+@home-tools-x: 110px;
+@home-tools-y: 0px;
+@home-tools-offset-x: -110px;
+@home-tools-offset-y: 0px;
+@home-tools-width: 110px;
+@home-tools-height: 110px;
+@home-tools-total-width: 330px;
+@home-tools-total-height: 321px;
+@home-tools-image: '/images/sprite.png';
+@home-tools: 110px 0px -110px 0px 110px 110px 330px 321px '/images/sprite.png' home-tools;
+@instagram-hover-name: instagram-hover;
+@instagram-hover-x: 50px;
+@instagram-hover-y: 271px;
+@instagram-hover-offset-x: -50px;
+@instagram-hover-offset-y: -271px;
+@instagram-hover-width: 50px;
+@instagram-hover-height: 50px;
+@instagram-hover-total-width: 330px;
+@instagram-hover-total-height: 321px;
+@instagram-hover-image: '/images/sprite.png';
+@instagram-hover: 50px 271px -50px -271px 50px 50px 330px 321px '/images/sprite.png' instagram-hover;
+@instagram-name: instagram;
+@instagram-x: 0px;
+@instagram-y: 271px;
+@instagram-offset-x: 0px;
+@instagram-offset-y: -271px;
+@instagram-width: 50px;
+@instagram-height: 50px;
+@instagram-total-width: 330px;
+@instagram-total-height: 321px;
+@instagram-image: '/images/sprite.png';
+@instagram: 0px 271px 0px -271px 50px 50px 330px 321px '/images/sprite.png' instagram;
+@map-name: map;
+@map-x: 220px;
+@map-y: 0px;
+@map-offset-x: -220px;
+@map-offset-y: 0px;
+@map-width: 110px;
+@map-height: 110px;
+@map-total-width: 330px;
+@map-total-height: 321px;
+@map-image: '/images/sprite.png';
+@map: 220px 0px -220px 0px 110px 110px 330px 321px '/images/sprite.png' map;
+@paper-name: paper;
+@paper-x: 0px;
+@paper-y: 0px;
+@paper-offset-x: 0px;
+@paper-offset-y: 0px;
+@paper-width: 110px;
+@paper-height: 110px;
+@paper-total-width: 330px;
+@paper-total-height: 321px;
+@paper-image: '/images/sprite.png';
+@paper: 0px 0px 0px 0px 110px 110px 330px 321px '/images/sprite.png' paper;
+@pen-paper-name: pen-paper;
+@pen-paper-x: 110px;
+@pen-paper-y: 110px;
+@pen-paper-offset-x: -110px;
+@pen-paper-offset-y: -110px;
+@pen-paper-width: 110px;
+@pen-paper-height: 110px;
+@pen-paper-total-width: 330px;
+@pen-paper-total-height: 321px;
+@pen-paper-image: '/images/sprite.png';
+@pen-paper: 110px 110px -110px -110px 110px 110px 330px 321px '/images/sprite.png' pen-paper;
+@phone-paper-name: phone-paper;
+@phone-paper-x: 0px;
+@phone-paper-y: 110px;
+@phone-paper-offset-x: 0px;
+@phone-paper-offset-y: -110px;
+@phone-paper-width: 110px;
+@phone-paper-height: 110px;
+@phone-paper-total-width: 330px;
+@phone-paper-total-height: 321px;
+@phone-paper-image: '/images/sprite.png';
+@phone-paper: 0px 110px 0px -110px 110px 110px 330px 321px '/images/sprite.png' phone-paper;
+@phone-name: phone;
+@phone-x: 100px;
+@phone-y: 271px;
+@phone-offset-x: -100px;
+@phone-offset-y: -271px;
+@phone-width: 50px;
+@phone-height: 50px;
+@phone-total-width: 330px;
+@phone-total-height: 321px;
+@phone-image: '/images/sprite.png';
+@phone: 100px 271px -100px -271px 50px 50px 330px 321px '/images/sprite.png' phone;
+@star-hover-name: star-hover;
+@star-hover-x: 150px;
+@star-hover-y: 271px;
+@star-hover-offset-x: -150px;
+@star-hover-offset-y: -271px;
+@star-hover-width: 50px;
+@star-hover-height: 50px;
+@star-hover-total-width: 330px;
+@star-hover-total-height: 321px;
+@star-hover-image: '/images/sprite.png';
+@star-hover: 150px 271px -150px -271px 50px 50px 330px 321px '/images/sprite.png' star-hover;
+@star-name: star;
+@star-x: 200px;
+@star-y: 271px;
+@star-offset-x: -200px;
+@star-offset-y: -271px;
+@star-width: 50px;
+@star-height: 50px;
+@star-total-width: 330px;
+@star-total-height: 321px;
+@star-image: '/images/sprite.png';
+@star: 200px 271px -200px -271px 50px 50px 330px 321px '/images/sprite.png' star;
+@vkontakte-hover-name: vkontakte-hover;
+@vkontakte-hover-x: 104px;
+@vkontakte-hover-y: 220px;
+@vkontakte-hover-offset-x: -104px;
+@vkontakte-hover-offset-y: -220px;
+@vkontakte-hover-width: 52px;
+@vkontakte-hover-height: 51px;
+@vkontakte-hover-total-width: 330px;
+@vkontakte-hover-total-height: 321px;
+@vkontakte-hover-image: '/images/sprite.png';
+@vkontakte-hover: 104px 220px -104px -220px 52px 51px 330px 321px '/images/sprite.png' vkontakte-hover;
+@vkontakte-name: vkontakte;
+@vkontakte-x: 52px;
+@vkontakte-y: 220px;
+@vkontakte-offset-x: -52px;
+@vkontakte-offset-y: -220px;
+@vkontakte-width: 52px;
+@vkontakte-height: 51px;
+@vkontakte-total-width: 330px;
+@vkontakte-total-height: 321px;
+@vkontakte-image: '/images/sprite.png';
+@vkontakte: 52px 220px -52px -220px 52px 51px 330px 321px '/images/sprite.png' vkontakte;
+@youtube-hover-name: youtube-hover;
+@youtube-hover-x: 0px;
+@youtube-hover-y: 220px;
+@youtube-hover-offset-x: 0px;
+@youtube-hover-offset-y: -220px;
+@youtube-hover-width: 52px;
+@youtube-hover-height: 51px;
+@youtube-hover-total-width: 330px;
+@youtube-hover-total-height: 321px;
+@youtube-hover-image: '/images/sprite.png';
+@youtube-hover: 0px 220px 0px -220px 52px 51px 330px 321px '/images/sprite.png' youtube-hover;
+@youtube-name: youtube;
+@youtube-x: 156px;
+@youtube-y: 220px;
+@youtube-offset-x: -156px;
+@youtube-offset-y: -220px;
+@youtube-width: 52px;
+@youtube-height: 51px;
+@youtube-total-width: 330px;
+@youtube-total-height: 321px;
+@youtube-image: '/images/sprite.png';
+@youtube: 156px 220px -156px -220px 52px 51px 330px 321px '/images/sprite.png' youtube;
+@spritesheet-width: 330px;
+@spritesheet-height: 321px;
+@spritesheet-image: '/images/sprite.png';
+@spritesheet-sprites: @arrow-right @call-phone @check @facebook-hover @facebook @home-tools @instagram-hover @instagram @map @paper @pen-paper @phone-paper @phone @star-hover @star @vkontakte-hover @vkontakte @youtube-hover @youtube;
+@spritesheet: 330px 321px '/images/sprite.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: extract(@sprite, 10);
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}

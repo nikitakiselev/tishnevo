@@ -1,0 +1,5 @@
+{
+    "require": {
+        "digitalhammer/lpforms": "^1.0"
+    }
+}

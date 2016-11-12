@@ -1,0 +1,101 @@
+.news {
+    padding-top: 12px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #9e9176;
+
+    .news-header {
+        font-size: 50px;
+        color: #40443f;
+        margin-bottom: 21px;
+        padding: 0 34px;
+    }
+
+    .all-news {
+        padding: 0 34px;
+        text-align: right;
+    }
+
+    .all-news-btn {
+        display: inline-block;
+        background: #9e9176;
+        height: 50px;
+        line-height: 50px;
+        color: white;
+        font-size: 18px;
+        font-style: italic;
+        padding: 0 25px;
+        text-decoration: none;
+
+        &:hover {
+            > .icon {
+                transform: translateX(5px);
+            }
+        }
+
+        .icon {
+            vertical-align: middle;
+            margin-left: 5px;
+            transition: transform .4s;
+        }
+    }
+
+    .row {
+        .clearfix();
+        margin-bottom: 20px;
+
+        .article {
+            width: 100% / 2;
+            float: left;
+            padding: 0 34px;
+            box-sizing: border-box;
+
+            .thumb {
+                float: left;
+            }
+
+            .body {
+                padding-left: 218px;
+
+                .title {
+                    font-size: 24px;
+                    font-weight: bold;
+                    color: #40443f;
+                    border-bottom: 1px solid #dadada;
+                    text-decoration: none;
+                    margin-bottom: 3px;
+                }
+
+                .meta {
+                    font-size: 18px;
+                    font-style: italic;
+                    margin-bottom: 15px;
+                }
+
+                .text {
+                    font-size: 24px;
+                    margin-bottom: 10px;
+
+                    p {
+                        margin: 0;
+                    }
+                }
+
+                .readmore-btn {
+                    display: block;
+                    border: 1px solid #9e9176;
+                    text-align: center;
+                    font-size: 18px;
+                    font-style: italic;
+                    color: #40443f;
+                    text-decoration: none;
+                    line-height: 50px;
+                    height: 50px;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}

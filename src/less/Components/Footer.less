@@ -1,0 +1,118 @@
+.footer {
+    background: #9e9176;
+    padding-top: 35px;
+    color: #444444;
+
+    p {
+        margin: 0;
+    }
+
+    a {
+        color: #444444;
+        text-decoration: none;
+    }
+
+    .copyright {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .logo-and-phone {
+        .clearfix();
+    }
+
+    .phone-link {
+        display: inline-block;
+        font-size: 30px;
+        font-weight: bold;
+        line-height: 50px;
+        vertical-align: middle;
+        text-decoration: none;
+    }
+
+    .links {
+        font-size: 20px;
+        list-style: none;
+
+        .main {
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+    }
+
+    .footer-block {
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        min-height: 135px;
+
+        &:not(:last-child):after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -50px;
+            border-right: 1px solid #93866c;
+            width: 1px;
+            height: 135px;
+        }
+    }
+
+    .footer-blocks {
+        text-align: justify;
+        border-bottom: 1px solid #93866c;
+
+        &:after {
+            display: inline-block;
+            content: '';
+            width: 100%;
+        }
+    }
+
+    .creator {
+        float: left;
+        font-size: 20px;
+        line-height: 50px;
+        font-weight: bold;
+        line-height: 50px;
+    }
+}
+
+.logo-sm {
+    display: inline-block;
+    background: url(../images/logo-sm.png) no-repeat;
+    width: 104px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.footer-row {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    .clearfix();
+
+    .menu {
+        list-style: none;
+        float: right;
+        margin-top: 20px;
+
+        li {
+            display: inline-block;
+            font-size: 20px;
+
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
+}
+
+.ddlab-logo {
+    width: 145px;
+    height: 50px;
+    display: inline-block;
+    background: url(../images/ddlab-logo.png) no-repeat;
+    text-decoration: none;
+    vertical-align: middle;
+    margin-left: 20px;
+}
