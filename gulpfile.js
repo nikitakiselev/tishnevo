@@ -97,7 +97,6 @@ gulp.task('image', () => {
         .pipe(changed('dist/images'))
         .pipe(imagemin())
         .pipe(gulp.dest('dist/images'))
-        .pipe(notify("Images minified!"))
         .pipe(livereload())
 });
 
