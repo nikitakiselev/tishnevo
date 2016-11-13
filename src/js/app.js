@@ -54,3 +54,9 @@ callbackForm.populateErrors = (ajaxForm, errorsJson) => {
 let popupCallbackForm = new AjaxForm('#callback-popup-form', {
     autoHelpBlock: true
 });
+
+$('#plan-switcher').on('click', '[data-image]', event => {
+    let $link = $(event.target);
+    $('#plan').css('background-image', `url(${$link.data('image')})`);
+    event.preventDefault();
+});

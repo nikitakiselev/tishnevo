@@ -1,7 +1,8 @@
 .plan {
     background: url(../images/plan.jpg) no-repeat;
     background-position: top center;
-    height: 321px;
+    height: 320px;
+    border-bottom: 1px solid #9d9d6e;
 
     .container {
         height: 321px;
@@ -11,17 +12,38 @@
         color: #323f15;
         font-size: 50px;
         position: absolute;
-        top: 4px;
-        left: 14px;
+        top: -15px;
+        left: 0;
+        background: url(../images/switcher-bg.png);
+        box-sizing: border-box;
+        display: block;
+        width: 476px;
+        height: 103px;
+        padding-top: 18px;
+        padding-left: 32px;
+
+        a {
+            width: 40px;
+            display: inline-block;
+            color: #323f15;
+            text-decoration: none;
+        }
     }
 
     .link {
+        display: block;
         font-size: 30px;
         color: white;
         font-style: italic;
         position: absolute;
-        bottom: 17px;
-        right: 69px;
+        bottom: 0;
+        right: 0;
         text-decoration: none;
+        background: url(../images/plan-caption-bg.png) no-repeat;
+        box-sizing: border-box;
+        width: 529px;
+        height: 91px;
+        padding-top: 26px;
+        text-align: center;
     }
 }
